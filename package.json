@@ -1,0 +1,46 @@
+{
+  "name": "mernshoptemplate",
+  "version": "1.0.0",
+  "description": "Template for shops on MERN stack",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "server": "nodemon dist/app.js",
+    "client": "npm run start --prefix src/client",
+    "serve": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/steelswheel/mernshoptemplate.git"
+  },
+  "keywords": [
+    "react",
+    "mern"
+  ],
+  "author": "steelswheel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/steelswheel/mernshoptemplate/issues"
+  },
+  "homepage": "https://gitlab.com/steelswheel/mernshoptemplate#readme",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/config": "^3.3.0",
+    "@types/express": "^4.17.15",
+    "@types/express-validator": "^3.0.0",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/mongoose": "^5.11.97",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "react": "^18.2.0"
+  }
+}
